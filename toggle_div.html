@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<style>
+    #box{
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        
+    }
+</style>
+<body>
+    <button onclick="show_div()">show div</button>
+    <button onclick="hide_div()">hide div</button>
+
+    <div id="box"></div>
+
+    <script>
+       var x= document.getElementById("box");
+       
+    function show_div(){
+         x.style.display="block";
+    }
+ function hide_div(){
+         x.style.display="none";
+    }
+
+    </script>
+</body>
+</html>

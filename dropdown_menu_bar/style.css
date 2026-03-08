@@ -1,0 +1,61 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #333;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    position: relative; /* For dropdown positioning */
+}
+
+.menu li a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    background-color: #555;
+}
+
+/* Submenu styling */
+.submenu {
+    display: none; /* Hide submenu by default */
+    position: absolute;
+    top: 100%; /* Below parent menu */
+    left: 0;
+    background-color: #444;
+    list-style: none;
+    min-width: 150px;
+}
+
+.submenu li a {
+    padding: 10px 15px;
+    color: white;
+}
+
+.submenu li a:hover {
+    background-color: #666;
+}
+
+/* Show submenu on hover */
+.dropdown:hover .submenu {
+    display: block;
+}
